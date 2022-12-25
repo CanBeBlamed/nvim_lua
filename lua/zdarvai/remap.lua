@@ -21,4 +21,6 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>t", ":vs|:te<CR>")
 vim.keymap.set("n", "<leader>h", ":15sp|:te<CR>")
 
+vim.keymap.set("n", "<leader>u", ":UndotreeToggle<CR>")
+
 vim.keymap.set("t", "<C-[>", "<C-\\><C-n>")
