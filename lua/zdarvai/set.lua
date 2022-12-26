@@ -1,5 +1,3 @@
-vim.api.nvim_set_var('deoplete#enable_at_startup', '1')
-
 vim.cmd [[set mouse= ]]
 
 vim.opt.nu = true
