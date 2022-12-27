@@ -1,6 +1,13 @@
+-- deoplete for jedi
+
 vim.api.nvim_set_var('deoplete#enable_at_startup', '1')
 
+-- no fancy GUI mouse
+
 vim.cmd [[set mouse= ]]
+
+-- yt: https://www.youtube.com/watch?v=w7i4amO_zaE
+-- github: https://github.com/ThePrimeagen/init.lua
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -26,6 +33,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+-- the only correct way
 
 vim.opt.splitbelow = true
 vim.opt.splitright = true
