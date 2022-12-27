@@ -1,5 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
@@ -16,9 +15,17 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("x", "<leader>p", [["_dP]])
-    
-vim.keymap.set("n", "<leader>t", ":vs|:te<CR>")
-vim.keymap.set("n", "<leader>h", ":15sp|:te<CR>")
 
+-- line numbers off / on
+
+vim.keymap.set("n", "<leader>q", ":set nornu<CR>:set nonu<CR>", { silent = true })
+vim.keymap.set("n", "<leader>w", ":set nu<CR>:set rnu<CR>", { silent = true })
+    
+-- vertical / horizontal terminal
+
+vim.keymap.set("n", "<leader>t", ":vs|:te<CR>", { silent = true })
+vim.keymap.set("n", "<leader>h", ":15sp|:te<CR>", { silent = true })
+
+--- exit from terminal mode the normal way
 
 vim.keymap.set("t", "<C-[>", "<C-\\><C-n>")
