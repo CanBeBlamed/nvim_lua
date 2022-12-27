@@ -12,17 +12,6 @@ return require('packer').startup(function(use)
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
-use {
-  "folke/zen-mode.nvim",
-  config = function()
-    require("zen-mode").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  end
-}
-
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
   use('nvim-treesitter/playground')
