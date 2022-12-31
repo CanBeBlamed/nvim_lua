@@ -43,7 +43,7 @@ vim.keymap.set("n", "<leader>w", ":set nu<CR>:set rnu<CR>", { silent = true })
 -- vertical / horizontal terminal
 
 vim.keymap.set("n", "<leader>t", ":vs|:te<CR>", { silent = true })
-vim.keymap.set("n", "<leader>g", ":15sp|:te<CR>", { silent = true })
+vim.keymap.set("n", "<leader>r", ":15sp|:te<CR>", { silent = true })
 
 -- exit from terminal mode the normal way
 
