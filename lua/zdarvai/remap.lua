@@ -53,3 +53,8 @@ vim.keymap.set("t", "<C-[>", "<C-\\><C-n>")
 
 vim.keymap.set("n", "<leader>l", "gt")
 vim.keymap.set("n", "<leader>h", "gT")
+
+-- enter instert mode, paste from clipboard, exit insert mode
+
+vim.keymap.set("n" , "<leader>i", "i<C-r>*<C-[>")
+vim.keymap.set("n" , "<leader>a", "a<C-r>*<C-[>")
